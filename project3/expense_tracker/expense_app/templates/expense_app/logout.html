@@ -1,0 +1,16 @@
+{% extends 'expense_app/base.html' %}
+
+{% block body %}
+<div class="container">
+    {% if user.is_authenticated %}
+    <h1>Thank You!</h1>
+    <p>
+        You have been successfully logged out
+    </p>
+    {% else %}
+    <p>
+        You're not logged in
+    </p>
+    {% endif %}
+</div>
+{% endblock %}

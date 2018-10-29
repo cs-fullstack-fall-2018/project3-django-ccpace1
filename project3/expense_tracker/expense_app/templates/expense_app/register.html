@@ -1,0 +1,14 @@
+{% extends 'expense_app/base.html' %}
+
+{% block body %}
+<form method="post">
+    <div class="container">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+
+
+    </div>
+</form>
+{% endblock %}
